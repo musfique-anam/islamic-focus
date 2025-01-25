@@ -11,7 +11,7 @@ This is a simple login form built with HTML and CSS. It features a user-friendly
 ## Screenshot of the Login Form
 Below is a screenshot of the login form : 
 
-![Login Form Screenshot] (loginformInterface.png)
+![Login Form Screenshot](loginformInterface.png)
 
 ## How to Use 
 1. Clone the Repository 
