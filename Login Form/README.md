@@ -8,8 +8,8 @@ This is a simple login form built with HTML and CSS. It features a user-friendly
 - Responsive layout
 - User-friendly authentication interface
 
-## Screenshot of the Login Form
-Below is a screenshot of the login form : 
+## Interface of the Login Form
+Below is a Interface of the login form : 
 
 ![Login Form Screenshot](loginformInterface.png)
 
