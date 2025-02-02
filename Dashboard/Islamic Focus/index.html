@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,82 +8,84 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
+    <!-- Dashboard Container -->
     <div class="Dashboard">
+
         <!-- Sidebar -->
-         <div class="sidebar">
-            <!-- Top -->
+        <div class="sidebar">
+            <!-- Sidebar Top Section -->
             <div class="titles">
                 <img src="/images/Islamic-Focus_LOGO.png" alt="Logo">
                 <h3>Islamic Focus</h3>
             </div>
+
+            <!-- Sidebar Menu -->
             <ul>
-                <li><a href="#"><i class="fa-solid fa-display"></i>Dashboard</a> </li>
-                <li><a href="#"><i class="fas fa-heart"></i>Favorites</a> </li>
-                <li><a href="#"><i class="fa-solid fa-book-open"></i>Quran</a> </li>
-                <li><a href="#"><i class="fa-solid fa-book"></i>Hadis</a> </li>
-                <li><a href="#"><i class="fa-solid fa-microphone-lines"></i>Scholars</a> </li>
-                <li><a href="#"><i class="fa-regular fa-clock"></i>Prayer Clock</a> </li>
-                <li><a href="#"><i class="fa-solid fa-headphones"></i>Nasheeds</a> </li>
+                <li><a href="#"><i class="fa-solid fa-house"></i>Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-heart"></i>Favorites</a></li>
+                <li><a href="#"><i class="fa-solid fa-book-open"></i>Quran</a></li>
+                <li><a href="#"><i class="fa-solid fa-book"></i>Hadis</a></li>
+                <li><a href="#"><i class="fa-solid fa-microphone-lines"></i>Scholars</a></li>
+                <li><a href="#"><i class="fa-regular fa-clock"></i>Prayer Clock</a></li>
+                <li><a href="#"><i class="fa-solid fa-headphones"></i>Nasheeds</a></li>
             </ul>
+
             <hr>
-            <!-- Bottom -->
-            <div class ="Bottom">
+
+            <!-- Sidebar Bottom Section -->
+            <div class="Bottom">
                 <ul>
                     <li><a href="#"><i class="fa-solid fa-calculator"></i>Jakat Calculator</a></li>
-                    <li><a href="#"><i class="fa-solid fa-wallet"></i></i>Donation</a></li>
-                    <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i></i>Log Out</a></li>
+                    <li><a href="#"><i class="fa-solid fa-wallet"></i>Donation</a></li>
+                    <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i>Log Out</a></li>
                 </ul>
             </div>
         </div>
-        <!-- Main Contents -->
-        <div class="Main-contents">
 
+        <!-- Main Contents -->
+        <div class="right-section">
+            <!-- Stats and Info Section -->
+            <div class="stats-info">
+                <h3>Your Info</h3>
+                <p>Info about user or stats</p>
+            </div>
+
+            <div class="stats">
+                <h3>Statistics</h3>
+                <p>Display relevant stats here</p>
+            </div>
+        </div>
+
+        <!-- Main Content Section -->
+        <div class="Main-contents">
             <!-- Top Bar -->
             <div class="top-bar">
                 <input type="text" placeholder="Search...">
+
+                <!-- Notification -->
+                <div class="notification">
+                    <span class="notification-text">Ramadan Countdown: </span>
+                    <span class="countdown-days" id="countdownDays"></span>25 days remaining
+                </div>
+                <i class="fa-regular fa-bell"></i>
+                <!-- User -->
                 <div class="user">
                     <span>Musfique Anam</span>
                     <img src="/images/Formal HS.png" alt="Profile">
                 </div>
             </div>
 
+
             <!-- Dashboard Sections -->
-
-            <!-- Top Row -->
-            <div class="top-row">
-                <!-- News Section -->
-                <div class="news">News</div>
-                <!-- Calender -->
-                <div class="calender">Arabic Calender</div>
-                <!-- My Statistics -->
-                <div class="stats">My Stats</div>
-            </div>
-
-            <!-- Middle Row -->
-            <div class="middle-row">
-                <!-- Quran Section -->
-                <div class="quran-reader">Quran Reader</div>
-                <!-- Scholars Section -->
-                <div class="scholars">Scholars</div>
-            </div>
-            
-            <!-- Middle Row two -->
-            <div class="middle-row-two">
-                <!-- Prayer Section -->
-                <div class="prayer-time">Prayer Schedule</div>
-                <!-- Books Section -->
-                <div class="booklist">Booklist</div>
-            </div>
-            
-            <!-- Bottom Row -->
-            <div class="bottom-row">
-                <!-- Task Section -->
-                <div class="task">Task Checklist</div>
-                <!-- Countdown Section -->
-                <div class="countdown">Ramadan Countdown</div>
-            </div>
+            <div class="news">News</div>
+            <div class="prayer-time">Prayer Schedule</div>
+            <div class="quran-reader">Quran Reader</div>
+            <div class="scholars">Scholars</div>
+            <div class="booklist">Booklist</div>
         </div>
     </div>
 </body>
+
 </html>
