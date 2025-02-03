@@ -193,10 +193,17 @@ body {
     font-weight: 600;
 }
 
-.top-bar i { 
-    font-size: 25px;
+.notification-link {
+    font-size: 24px;
     margin-right: 10px; 
     margin-left: 30px;
+    text-decoration: none; /* Remove underline */
+    color: black; /* Default icon color */
+
+}
+
+.notification-link:hover {
+    color: #007bff; /* Blue on hover */
 }
 
 
