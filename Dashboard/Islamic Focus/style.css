@@ -80,6 +80,26 @@ body {
 .Bottom {
     margin-top: 60px;
 }
+/* Stats Section - Smaller Size */
+.stats {
+    background: #ffffff;
+    color: #2c3e50;
+    padding: 10px; /* Reduced padding */
+    border-radius: 8px; /* Slightly smaller corners */
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2px; /* Less margin */
+    margin-left: 5px;
+    text-align: center;
+    width: 220px; /* Smaller width */
+    font-size: 12px; /* Smaller text */
+}
+
+.stats h3 {
+    margin-bottom: 8px; /* Reduced spacing */
+    font-size: 14px; /* Smaller heading */
+}
+
+
 
 /* Right Section */
 .right-section {
@@ -92,8 +112,8 @@ body {
     position: fixed;
     top: 70px;
     right: 20px;
-    bottom: 20px;
-    overflow-y: auto;
+    bottom: 5px;
+    overflow-y: hidden;
 }
 
 /* Right Section Individual Elements */
@@ -110,6 +130,88 @@ body {
 .right-section h3 {
     margin-bottom: 10px;
 }
+
+.pie-chart {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #ff8c00 0% 30%,   /* Orange: 30% */
+        #3498db 30% 50%,  /* Blue: 20% */
+        #2ecc71 50% 75%,  /* Green: 25% */
+        #e74c3c 75% 100%   /* Red: 25% */
+    );
+    margin: 0 auto;
+    position: relative;
+}
+
+.pie-chart::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+}
+.legend {
+    display: flex;
+    flex-direction: column;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.color-box {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+/* Booklist Section - Smaller Size */
+.booklist-section {
+    background: #ffffff;
+    color: #2c3e50;
+    padding: 6px; /* Reduced padding */
+    border-radius: 8px; /* Slightly smaller corners */
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 15px; /* Less margin */
+    margin-left: 5px;
+    text-align: center;
+    width: 237px; /* Smaller width */
+    font-size: 12px; /* Smaller text */
+}
+
+.booklist-section h3 {
+    margin-bottom: 8px; /* Reduced spacing */
+    font-size: 14px; /* Smaller heading */
+}
+
+.booklist {
+    margin-right: 10px;
+    margin-left: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.booklist li {
+    padding: 3px 0; /* Reduced padding */
+    font-size: 12px; /* Smaller text */
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+.booklist li:last-child {
+    border-bottom: none;
+}
+
+
 
 /* Main Contents */
 .Main-contents {
@@ -209,7 +311,7 @@ body {
 
 /* Section Styling */
 .news, .calender, .stats, .prayer-time, 
-.quran-reader, .scholars, .booklist, .task, .countdown {
+.quran-reader, .booklist, .task, .countdown {
     background: white;
     padding: 20px;
     border-radius: 10px;
@@ -220,14 +322,48 @@ body {
 }
 
 /* Section Hover Effects */
-.news:hover, .calender:hover, .stats:hover, .prayer-time:hover, 
-.quran-reader:hover, .scholars:hover, .booklist:hover, .task:hover, .countdown:hover {
+.news:hover, .calender:hover, .stats:hover, 
+ .booklist:hover,  .countdown:hover {
     transform: scale(1.05);
 }
 
 /* Section Grid Layout */
 .news {
     grid-column: span 2;
+    background: white;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: left;
+    font-weight: 500;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.news:hover {
+    transform: scale(1.05);
+}
+
+.news h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.news-item:last-child {
+    border-bottom: none; /* Remove border from the last item */
+}
+
+.news-item i {
+    color: #ff8c00; /* Orange color for icons */
+    font-size: 16px;
 }
 
 .calender {
@@ -238,17 +374,194 @@ body {
     grid-column: span 1;
 }
 
+/* .prayer-time {
+    grid-column: span 1;
+} */
+
+/* Prayer Time Section */
+/* Prayer Time Section */
 .prayer-time {
-    grid-column: span 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 12px;
 }
 
-.quran-reader {
-    grid-column: span 1;
+.prayer-name-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
 }
 
-.scholar {
+.prayer-name {
+    background: #ffffff;
+    padding: 16px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    font-size: 12px; /* Smaller font size */
+    text-align: center;
+}
+
+.prayer-time-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+}
+
+.prayer-time-text {
+    background: #ffffff;
+    padding: 6px 12px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    font-size: 12px; /* Smaller font size */
+    text-align: center;
+}
+
+.prayer-time i {
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+
+
+
+
+
+/* .quran-reader {
+    grid-column: span 1;
+} */
+.quran-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.quran-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.quran-selector {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.select-label {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.select-option {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 150px;
+}
+
+.go-button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.go-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* .scholar {
     grid-column: span 2;
 }
+/* .scholar-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+} */ 
+
+.scholar-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.search-bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-label {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.search-input {
+    width: 250px;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+.lecture-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.lecture-item {
+    padding: 8px 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+}
+
+.lecture-item:hover {
+    background-color: #e2e6ea;
+    cursor: pointer;
+}
+
 
 .booklist {
     grid-column: span 1;
@@ -290,3 +603,4 @@ body {
         left: 0;
     }
 }
+

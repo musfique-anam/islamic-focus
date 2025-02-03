@@ -47,15 +47,28 @@
         <!-- Main Contents -->
         <div class="right-section">
             <!-- Stats and Info Section -->
-            <div class="stats-info">
-                <h3>Your Info</h3>
-                <p>Info about user or stats</p>
+            
+            <div class="stats">
+                <h3>Your Stats</h3>
+                <div class="pie-chart"></div>
+                <div class="legend">
+                    <div class="legend-item"><span class="color-box" style="background-color: #FF5733;"></span> Prayer</div>
+                    <div class="legend-item"><span class="color-box" style="background-color: #33FF57;"></span> Quran</div>
+                    <div class="legend-item"><span class="color-box" style="background-color: #3357FF;"></span> Hadis</div>
+                    <div class="legend-item"><span class="color-box" style="background-color: #F1C40F;"></span> Lectures</div>
+                </div>
             </div>
 
-            <div class="stats">
-                <h3>Statistics</h3>
-                <p>Display relevant stats here</p>
+            <div class="booklist-section">
+                <h3>Your Booklist</h3>
+                <ul class="booklist">
+                    <li><strong>Book 1:</strong> Sahih al-Bukhari</li>
+                    <li><strong>Book 2:</strong> Ahkame Zindegi</li>
+                    <li><strong>Book 3:</strong> Paradoxical Sazid</li>
+                    <li><strong>Book 4:</strong> Khatimul Ambiya</li>
+                </ul>
             </div>
+            
         </div>
 
         <!-- Main Content Section -->
@@ -82,11 +95,76 @@
 
 
             <!-- Dashboard Sections -->
-            <div class="news">News</div>
-            <div class="prayer-time">Prayer Schedule</div>
-            <div class="quran-reader">Quran Reader</div>
-            <div class="scholars">Scholars</div>
-            <div class="booklist">Booklist</div>
+            <div class="news">
+                <h3>Recent News</h3>
+                <div class="news-item">
+                    <i class="fas fa-newspaper"></i> <!-- News Icon -->
+                    <span>New AI model achieves record accuracy!</span>
+                </div>
+                <div class="news-item">
+                    <i class="fas fa-bolt"></i> <!-- Different Icon -->
+                    <span>Electric cars see a 50% rise in demand!</span>
+                </div>
+                <div class="news-item">
+                    <i class="fas fa-globe"></i> <!-- Different Icon -->
+                    <span>Global summit on climate change starts today.</span>
+                </div>
+            </div>
+            
+            <div class="prayer-time">
+                <h3 class="prayer-title">Next Day Prayer Time Starts</h3>
+<div class="prayer-time">
+    <div class="prayer-name-column">
+        <div class="prayer-name">Fajr</div>
+        <div class="prayer-name">Dhuhr</div>
+        <div class="prayer-name">Asr</div>
+        <div class="prayer-name">Maghrib</div>
+        <div class="prayer-name">Isha</div>
+    </div>
+    <div class="prayer-time-column">
+        <div class="prayer-time-text">05:15 AM</div>
+        <div class="prayer-time-text">12:30 PM</div>
+        <div class="prayer-time-text">03:45 PM</div>
+        <div class="prayer-time-text">06:10 PM</div>
+        <div class="prayer-time-text">07:30 PM</div>
+    </div>
+</div>
+
+            </div>
+            <!-- <div class="quran-reader"> -->
+                <!-- Quran reader -->
+                <div class="quran-section">
+                    <h3 class="quran-title">Quran Reader</h3>
+                    <div class="quran-selector">
+                        <label class="select-label" for="para">Select Para:</label>
+                        <select id="para" class="select-option">
+                            <option value="1">Para 1</option>
+                            <option value="2">Para 2</option>
+                            <option value="3">Para 3</option>
+                            <!-- Add more options for each Para -->
+                        </select>
+                        <button class="go-button">Go</button>
+                    </div>
+
+                    <!-- Scholars -->
+                    <div class="scholars">
+                        <div class="scholars-section">
+                            <div class="search-bar-container">
+                                <label for="scholar-search" class="search-label"><h3>Recent lecturers</h3></label>
+                                <input type="text" id="scholar-search" class="search-input" placeholder="Search for a scholar">
+                                <button class="search-button">Search</button>
+                            </div>
+                            <!-- You can add the list of recent lectures below -->
+
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            <!-- </div> -->
+            
+            
+            <!-- <div class="booklist">Booklist</div> -->
         </div>
     </div>
 </body>
