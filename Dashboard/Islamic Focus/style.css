@@ -112,7 +112,7 @@ body {
     position: fixed;
     top: 70px;
     right: 20px;
-    bottom: 5px;
+    bottom: 22px;
     overflow-y: hidden;
 }
 
@@ -201,7 +201,7 @@ body {
 }
 
 .booklist li {
-    padding: 3px 0; /* Reduced padding */
+    padding: -1px 0; /* Reduced padding */
     font-size: 12px; /* Smaller text */
     font-weight: bold;
     border-bottom: 1px solid #ddd;
@@ -331,7 +331,7 @@ body {
 .news {
     grid-column: span 2;
     background: white;
-    padding: 5px;
+    padding: 2px;
     border-radius: 10px;
     text-align: left;
     font-weight: 500;
@@ -345,7 +345,7 @@ body {
 
 .news h3 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
 }
 
 .news-item {
@@ -366,6 +366,25 @@ body {
     font-size: 16px;
 }
 
+.view-all {
+    margin-top: 15px;
+    margin-left: 550px;
+    text-align: right; /* Align to the right */
+}
+
+.view-all a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.view-all i {
+    margin-left: 5px; /* Space between text and arrow */
+}
+
 .calender {
     grid-column: span 2;
 }
@@ -374,12 +393,6 @@ body {
     grid-column: span 1;
 }
 
-/* .prayer-time {
-    grid-column: span 1;
-} */
-
-/* Prayer Time Section */
-/* Prayer Time Section */
 .prayer-time {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -487,16 +500,6 @@ body {
 }
 
 
-/* .scholar {
-    grid-column: span 2;
-}
-/* .scholar-section {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-} */ 
 
 .scholar-title {
     text-align: center;
@@ -562,14 +565,6 @@ body {
     cursor: pointer;
 }
 
-
-.booklist {
-    grid-column: span 1;
-}
-
-.task {
-    grid-column: span 1;
-}
 
 /* Responsive Design */
 @media (max-width: 1024px) {
