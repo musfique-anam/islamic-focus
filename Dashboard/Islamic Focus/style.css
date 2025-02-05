@@ -1,4 +1,4 @@
-/* Import Google Fonts */
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /* Body Styles */
@@ -81,24 +81,7 @@ body {
 .Bottom {
     margin-top: 60px;
 }
-/* Stats Section - Smaller Size */
-.stats {
-    background: #ffffff;
-    color: #2c3e50;
-    padding: 10px; /* Reduced padding */
-    border-radius: 8px; /* Slightly smaller corners */
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 2px; /* Less margin */
-    margin-left: 5px;
-    text-align: center;
-    width: 220px; /* Smaller width */
-    font-size: 12px; /* Smaller text */
-}
 
-.stats h3 {
-    margin-bottom: 8px; /* Reduced spacing */
-    font-size: 14px; /* Smaller heading */
-}
 
 
 
@@ -146,6 +129,25 @@ body {
     position: relative;
 }
 
+/* Stats Section */
+.stats {
+    background: #ffffff;
+    color: #2c3e50;
+    padding: 10px; 
+    border-radius: 8px; 
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2px; 
+    margin-left: 5px;
+    text-align: center;
+    width: 220px; 
+    font-size: 12px; 
+}
+
+.stats h3 {
+    margin-bottom: 8px; 
+    font-size: 14px; 
+}
+
 .pie-chart::before {
     content: '';
     position: absolute;
@@ -175,23 +177,23 @@ body {
     border-radius: 5px;
 }
 
-/* Booklist Section - Smaller Size */
+/* Booklist Section */
 .booklist-section {
     background: #ffffff;
     color: #2c3e50;
-    padding: 6px; /* Reduced padding */
-    border-radius: 8px; /* Slightly smaller corners */
+    padding: 6px; 
+    border-radius: 8px; 
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 15px; /* Less margin */
+    margin-top: 15px; 
     margin-left: 5px;
     text-align: center;
-    width: 237px; /* Smaller width */
-    font-size: 12px; /* Smaller text */
+    width: 237px; 
+    font-size: 12px; 
 }
 
 .booklist-section h3 {
-    margin-bottom: 8px; /* Reduced spacing */
-    font-size: 14px; /* Smaller heading */
+    margin-bottom: 8px; 
+    font-size: 14px; 
 }
 
 .booklist {
@@ -202,8 +204,8 @@ body {
 }
 
 .booklist li {
-    padding: -1px 0; /* Reduced padding */
-    font-size: 12px; /* Smaller text */
+    padding: -1px 0;
+    font-size: 12px; 
     font-weight: bold;
     border-bottom: 1px solid #ddd;
 }
@@ -211,8 +213,6 @@ body {
 .booklist li:last-child {
     border-bottom: none;
 }
-
-
 
 /* Main Contents */
 .Main-contents {
@@ -270,7 +270,7 @@ body {
 
 /* Top Bar Notification */
 .notification {
-    background-color: #4895ef; /* Orange color for notification */
+    background-color: #4895ef; 
     color: white;
     font-weight: bold;
     padding: 10px 15px;
@@ -281,10 +281,6 @@ body {
     justify-content: center;
     font-size: 14px;
     transition: background-color 0.3s ease;
-}
-
-.notification:hover {
-    background-color: #072ac8; /* Slightly darker when hovered */
 }
 
 .notification-text {
@@ -300,8 +296,8 @@ body {
     font-size: 24px;
     margin-right: 10px; 
     margin-left: 30px;
-    text-decoration: none; /* Remove underline */
-    color: black; /* Default icon color */
+    text-decoration: none; 
+    color: black; 
 
 }
 
@@ -328,7 +324,7 @@ body {
     transform: scale(1.05);
 }
 
-/* Section Grid Layout */
+/* News Section */
 .news {
     grid-column: span 2;
     background: #ffeedd;
@@ -359,18 +355,18 @@ body {
 }
 
 .news-item:last-child {
-    border-bottom: none; /* Remove border from the last item */
+    border-bottom: none; 
 }
 
 .news-item i {
-    color: #ff8c00; /* Orange color for icons */
+    color: #ff8c00;
     font-size: 16px;
 }
 
 .view-all {
     margin-top: 15px;
     margin-left: 550px;
-    text-align: right; /* Align to the right */
+    text-align: right; 
 }
 
 .view-all a {
@@ -380,18 +376,6 @@ body {
     font-size: 14px;
     display: flex;
     align-items: center;
-}
-
-.view-all i {
-    margin-left: 5px; /* Space between text and arrow */
-}
-
-.calender {
-    grid-column: span 2;
-}
-
-.stats {
-    grid-column: span 1;
 }
 
 .prayer-time {
@@ -417,7 +401,7 @@ body {
     border-radius: 8px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     font-weight: 500;
-    font-size: 12px; /* Smaller font size */
+    font-size: 12px; 
     text-align: center;
 }
 
@@ -434,7 +418,7 @@ body {
     border-radius: 8px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     font-weight: 500;
-    font-size: 12px; /* Smaller font size */
+    font-size: 12px; 
     text-align: center;
 }
 
@@ -443,14 +427,6 @@ body {
     color: #2c3e50;
 }
 
-
-
-
-
-
-/* .quran-reader {
-    grid-column: span 1;
-} */
 .quran-section {
     background-color: white;
     padding: 20px;
@@ -499,8 +475,6 @@ body {
 .go-button:hover {
     background-color: #0056b3;
 }
-
-
 
 .scholar-title {
     text-align: center;
