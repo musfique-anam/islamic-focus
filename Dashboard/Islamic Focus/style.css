@@ -283,6 +283,10 @@ body {
     transition: background-color 0.3s ease;
 }
 
+.notification:hover {
+    background-color: #072ac8; /* Slightly darker when hovered */
+}
+
 .notification-text {
     margin-right: 10px;
 }
@@ -324,7 +328,7 @@ body {
     transform: scale(1.05);
 }
 
-/* News Section */
+/* New Section */
 .news {
     grid-column: span 2;
     background: #ffeedd;
@@ -359,7 +363,7 @@ body {
 }
 
 .news-item i {
-    color: #ff8c00;
+    color: #ff8c00; 
     font-size: 16px;
 }
 
