@@ -530,7 +530,7 @@ body {
     cursor: pointer;
 }
 
-/* Responsive Design */
+/* For Responsive Design */
 @media (max-width: 1024px) {
     .sidebar {
         width: 180px;
