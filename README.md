@@ -4,7 +4,7 @@ Islamic Focus Dashboard is a clean, responsive, and modern HTML-CSS dashboard UI
 
 ## Preview
 
-
+![Islamic Focus Dashboard](Images/dashboard.png)
 
 ## Features
 
