@@ -13,7 +13,7 @@ Islamic Focus Dashboard is a clean, responsive, and modern HTML-CSS dashboard UI
 - 📚 **Booklist** showcasing important Islamic books.
 - 🔔 **Notification bar** with upcoming event reminders.
 - 🔍 **Searchable scholars and lectures** area.
-- 🎨 Fully responsive layout built with HTML and CSS, leveraging Flexbox and Grid.
+- 🎨 Responsive layout built with HTML and CSS, leveraging Flexbox and Grid.
 - 📦 Uses FontAwesome icons for enhanced UI.
 
 ## How to Use
